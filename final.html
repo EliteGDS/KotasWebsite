@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Answer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>I Can Finally Ask You...</h1>
+    <p>Will you give me the honor of being your boyfriend and calling you mine?</p>
+    <button onclick="showCongrats()">Yes</button>
+    <button onclick="alert('Really? 😢')">No</button>
+    <p id="contract" style="display: none;">Woohoo! Congrats! (This is a legally binding contract. Neither party is allowed to exit this negotiation unless death do us part.)</p>
+  </div>
+  <script>
+    function showCongrats() {
+      document.getElementById('contract').style.display = 'block';
+    }
+    
+  </script>
+</body>
+</html>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contract Page</title>
+    <style>
+        /* Styling for the contract section */
+        .contract-section {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #000;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        .contract-section h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .contract-section p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .signature-input {
+            font-size: 18px;
+            padding: 10px;
+            width: 50%;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .submit-button {
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contract-section">
+        <h2>Official Contract</h2>
+        <p>This is a legally binding agreement between us. You are hereby agreeing to the following terms:</p>
+        <p><strong>
+            <br>
+            Duration of Relationship: This agreement shall remain in full force and effect until death do us part, or until we agree to change the terms (for example, adding more fun dates or adventures).
+            <br><br>
+            Mutual Obligations:
+            Party 1 agrees to always be there for Party 2, offering support, understanding, and an occasional cheesy pick-up line.
+            Party 2 agrees to laugh at Party 1’s jokes, even when they’re not that funny.
+            Both parties agree to share spontaneous moments of joy, whether it's through playing video games, sharing music, or staying up late talking about life.
+            <br><br>
+            Commitment to Growth: Both parties agree to help each other grow emotionally, intellectually, and creatively. This includes supporting dreams, offering advice, and occasionally indulging in a good movie.
+            <br><br>
+            The Power of Quotes: Both parties agree to share and cherish quotes, as they have become an essential part of the relationship. Each party will contribute at least one new quote per month to inspire the other.
+            <br><br>
+            Proximity Clause: This agreement also includes an obligation for occasional spontaneous kisses.</strong></p>
+
+        <p>Your signature (type your name below) is required to confirm your commitment:</p>
+
+        <!-- Input field for the signature -->
+        <input type="text" class="signature-input" placeholder="Your Full Name" id="signature" required>
+
+        <br><br>
+
+        <!-- Button to submit the contract (doesn't actually submit) -->
+        <button class="submit-button" onclick="submitContract()">Sign the Contract</button>
+    </div>
+
+    <script>
+        // Function to handle the contract submission (just for fun)
+        function submitContract() {
+            var signature = document.getElementById('signature').value;
+            if (signature) {
+                alert('Congratulations, ' + signature + '! You are officially bound by this contract. 😄');
+            } else {
+                alert('Please type your name to sign the contract!');
+            }
+        }
+    </script>
+
+</body>
+</html>
