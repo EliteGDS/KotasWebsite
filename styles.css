@@ -19,7 +19,7 @@ body {
   
   .anniversary-message {
     max-width: 600px;
-    margin: auto;
+    margin: 0;
     padding: 20px;
   }
 
