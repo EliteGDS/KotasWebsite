@@ -17,6 +17,12 @@ body {
     color: #6a1b9a;
   }
   
+  .anniversary-message {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+  }
+
   button {
     background-color: #ab47bc; /* Bright purple */
     color: white;
@@ -31,4 +37,3 @@ body {
   button:hover {
     background-color: #8e24aa;
   }
-  
